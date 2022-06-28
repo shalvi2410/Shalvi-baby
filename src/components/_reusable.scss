@@ -1,0 +1,28 @@
+.Header {
+  z-index: 99999;
+  position: fixed;
+  transition: 0.3s;
+}
+
+.HeaderBrand {
+  font-weight: 600;
+  font-size: 40px;
+
+  @media (max-width: $md) {
+    font-size: 33px;
+  }
+
+  @media (max-width: $sm) {
+    font-size: 25px;
+  }
+}
+
+.Footer {
+  background: #191919;
+  font-size: 16px;
+}
+
+.FooterBrand {
+  font-size: 30px;
+  font-weight: 600;
+}

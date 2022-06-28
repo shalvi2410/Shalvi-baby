@@ -1,0 +1,24 @@
+.HomePage {
+  .HeroSection {
+    height: 100vh;
+    position: relative;
+
+    @media (max-width: $sm) {
+      height: 80vh;
+    }
+
+    @import "../pages/HomeStyles/heroSection";
+  }
+
+  .PostsSection {
+    @import "../pages/HomeStyles/postsSection";
+  }
+
+  .GallerySection {
+    @import "../pages/HomeStyles/gallerySection";
+  }
+
+  .InterestsSection {
+    @import "../pages/HomeStyles/interestsSection";
+  }
+}

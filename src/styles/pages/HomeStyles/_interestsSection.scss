@@ -1,0 +1,58 @@
+circle {
+  fill: none;
+  stroke: black;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+
+  &:nth-child(2) {
+    stroke: $themeColor;
+    transition: 2s;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+  }
+}
+
+.InterestCard {
+  width: 250px;
+  height: 300px;
+
+  @media (max-width: $sm) {
+    height: 250px;
+  }
+}
+
+.InterestText {
+  font-size: 24px;
+  font-weight: 600;
+
+  @media (max-width: $md) {
+    font-size: 22px;
+  }
+}
+
+svg,
+.PercentContainer {
+  width: 150px;
+  height: 150px;
+  z-index: 1000;
+}
+
+.PercentContainer {
+  border-radius: 50%;
+}
+
+.Percent {
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+
+  &__Text {
+    font-size: 28px;
+    font-weight: 600;
+
+    @media (max-width: $sm) {
+      font-size: 24px;
+    }
+  }
+}
